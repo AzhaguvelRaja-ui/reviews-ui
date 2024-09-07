@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.testimonial-container {
+  text-align: center;
+}
+
+.heading {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+
+.subtitle {
+  margin-bottom: 30px;
+  /* font-family: Montserrat;
+font-size: 28px;
+font-weight: 400;
+line-height: 34.13px;
+text-align: center; */
+}
+
+.head-content {
+  font-family: Verdana;
+  color: #c3dddee0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.content {
+  font-family: Verdana;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 100;
+  text-size-adjust: 5px;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  width: auto;
+  height: 350px;
+  overflow: hidden;
+}
+
+.card {
+  width: 300px;
+  height: 180px;
+  margin: 30px 10px;
+  background-color: #333;
+  border: solid 1px #4d4b4b;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: move-left 10s ease infinite;
+}
+
+.card1 {
+  width: 300px;
+  height: 180px;
+  margin: 22px 22px;
+  background-color: #333;
+  border: solid 1px #4d4b4b;
+  padding: 17px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: move-upDown 10s ease infinite;
+
+}
+
+
+
+.card img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+
+}
+
+.card1 img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+/* Animation to move cards left */
+@keyframes move-left {
+  0% {
+    bottom: -80px;
+    transform: translateX(15vw);
+  }
+
+  100% {
+    bottom: 30px;
+    transform: translateX(-15vw);
+  }
+}
+
+@keyframes move-upDown {
+  0% {
+    bottom: 30px;
+    transform: translateX(15vw);
+  }
+
+  100% {
+    bottom: -80px;
+    transform: translateX(-15vw);
+  }
+
+}
+
+
+/* Adjustments for Mobile */
+@media (max-width: 1024px) {
+  .testimonial-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 30%;
+    margin: 20px 5px;
+    height: 273px;
+  }
+
+  .card1 {
+    width: 30%;
+    margin: 20px 5px;
+    height: 273px;
+
+  }
+
+  .card .head-content {
+    font-size: 10px;
+  }
+
+  .card .content {
+    font-size: 8px;
+  }
+
+  .card1 .head-content {
+    font-size: 10px;
+  }
+
+  .card1 .content {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .heading {
+    font-size: 33px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    /* margin-left: -100px; */
+  }
+
+  .subtitle {
+    font-size: 11px;
+    margin-bottom: 20px;
+    /* margin-left: -145px; */
+  }
+
+  .card1 {
+    margin: 22px 4px;
+    padding: 6px 12px;
+    height: 250px;
+  }
+
+  .card {
+    margin: 22px 4px;
+    padding: 6px 12px;
+    height: 250px;
+  }
+
+  .card .head-content {
+    font-size: 8px;
+  }
+
+  .card .content {
+    font-size: 7px;
+  }
+
+  .card1 .head-content {
+    font-size: 8px;
+  }
+
+  .card1 .content {
+    font-size: 7px;
+  }
+
+  .card1 img {
+    width: 30px;
+    height: 30px;
+  }
+  .card img {
+    width: 30px;
+        height: 30px;
+
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 10px;
+
+    margin-bottom: 20px;
+  }
+
+  .card1 {
+    margin: 22px 6px;
+    padding: 6px 12px;
+    height: 170px;
+  }
+
+  .card {
+    margin: 22px 6px;
+    padding: 6px 12px;
+    height: 170px;
+  }
+
+  .card .head-content {
+    font-size: 6px;
+  }
+
+  .card .content {
+    font-size: 5px;
+  }
+
+  .card1 .head-content {
+    font-size: 6px;
+  }
+
+  .card1 .content {
+    font-size: 5px;
+  }
+
+  .card1 img {
+    width: 30px;
+    height: 30px;
+  }
+  .card img {
+    width: 30px;
+    height: 30px;
+  }
+  
+}
